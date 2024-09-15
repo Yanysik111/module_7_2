@@ -5,6 +5,7 @@ def custom_write(file_name, strings):
         byte_ = file.tell()
         file.write(str_ + '\n')
         strings_positions[(num_str, byte_)] = str_
+    file.close()
     return strings_positions
 
 info = [
